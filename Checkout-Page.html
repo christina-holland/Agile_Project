@@ -8,45 +8,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+        
+            <div class="brand-title">Shoes by Stiegler</div>
+        
+                <div><img src="images/companylogo.png" class="logo"></div>
+            
+                    <a href="#"class=toggle-button>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+            
+                            <div class="navbar-links">        
+                                    <ul>
+                                    <li><a href="index2.html">Home</a></li>
+                                    <li><a href="Product Listings.html">Products</a></li>
+                                    <li><a href="cart.html">Shopping Cart</a></li>
+                                    </ul>
+                            </div>
+        </nav>
+        
+    </header>
+        
+        <div class="container">
+            <div class="column"><br><br>
+                <h2>Billing Information</h2>
+                        <form action="#" method="post">
+                            <label for="fname">Full Name:</label>
+                            <input type="text" id="fname" name="fname" required>
+                            <label for="street">Street Address:</label>
+                            <input type="text" id="street" name="street" required>
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" required>
+                            <label for="state">State:</label> 
+                            <input type="text" id="state" name="state" required>
+                            <label for="zip">Zip Code:</label>
+                            <input type="text" id="zip" name="zip" required> 
+                        </form>
+            </div>
 
-<div class="container">
-    <div class="column"><br><br>
-        <h2>Billing Information</h2>
-        <form action="#" method="post">
-            <label for="fname">Full Name:</label>
-            <input type="text" id="fname" name="fname" required>
-            <label for="street">Street Address:</label>
-            <input type="text" id="street" name="street" required>
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city" required>
-            <label for="state">State:</label> 
-            <input type="text" id="state" name="state" required>
-            <label for="zip">Zip Code:</label>
-            <input type="text" id="zip" name="zip" required> 
-        </form>
-    </div>
+                    <div class="columnTwo"> <br>
+                        <h2>Payment Information</h2> 
 
-    <div class="columnTwo"> <br>
-         <h2>Payment Information</h2> 
-
-     <form action="#" method="post"> 
-        <i class="fa fa-cc-amex" style="font-size:24px"></i>
-        <i class="fa fa-cc-visa" style="font-size:24px"></i>
-        <i class="fa fa-cc-discover" style="font-size:24px"></i>
-        <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
-        <i class="fa fa-google-wallet" style="font-size:24px"></i>
-        <i class="fa fa-paypal" style="font-size:24px"></i><br><br>
-         <label for="card">Card Number:</label>
-         <input type="text" id="card" name="card" required>        
-         <label for="expiration">Ex. Date/Year:</label> 
-         <input type="text" id="expiration" name="expiration" required><label for="CVV">CVV:</label>
-         <input type="text" id="cv" name="cv" required>          
-         <input type="submit" value="Submit">         
-         
-     </form>
-    </div> 
-</div>
-
+                            <form action="#" method="post"> 
+                                <i class="fa fa-cc-amex" style="font-size:24px"></i>
+                                <i class="fa fa-cc-visa" style="font-size:24px"></i>
+                                <i class="fa fa-cc-discover" style="font-size:24px"></i>
+                                <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
+                                <i class="fa fa-google-wallet" style="font-size:24px"></i>
+                                <i class="fa fa-paypal" style="font-size:24px"></i><br><br>
+                                <label for="card">Card Number:</label>
+                                <input type="text" id="card" name="card" required>        
+                                <label for="expiration">Ex. Date/Year:</label> 
+                                <input type="text" id="expiration" name="expiration" required><label for="CVV">CVV:</label>
+                                <input type="text" id="cv" name="cv" required>          
+                                <input type="submit" value="Submit">         
+                                
+                            </form>
+                    </div> 
+        </div>
+    <footer>
+        <nav class="footer-links">Shoes by Stiegler</div>
+        
+            <p>1234 Shoes Blvd.
+                Wilmington, NC 28405 <sup>.</sup>
+                   (910) 123-4567
+        
+        
+            </p>
+            <ol>
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="Product Listings.html">Products</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ol>     
+        </footer>
 </body>
 </html>
 
