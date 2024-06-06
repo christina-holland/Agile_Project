@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<nav class="Directionlink">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productlistings.html">Product Listings</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li></li>
+    </ul>
+</nav>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="stylescart.css">
+</head>
+<body>
+  <header>
+    <h1>Stiegler-Edtech-Shoes Cart</h1>
+  </header>
+
+  <main>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1xmBatlwFEAwwcvYWMQLWwHaFV%26pid%3DApi&f=1&ipt=6c3f22bd5c0c3b527d6850db7181b5866d23f0a1d419e7b8a10f59c7ce57cedf&ipo=images" alt="Product 1" class="product-image">
+        <div class="product-details">
+          <h3>Vans Sk8-HI</h3>
+          <p>Price: $80.00</p>
+          <p>Size: Men's 12</p>
+          <p>Product Description: </p>
+          <button class="ProductPage-btn" onclick="redirectToProductPage()">Product Page</button>
+          <button class="RemoveItemFromCart-btn" onclick="removeEventListener()">Remove Item From Cart </button>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.W8VPhKKpLRLIZ_9EJjB14wHaD4%26pid%3DApi&f=1&ipt=4adadc9a35c6f76d5ad2efac6af75dc266afbb6e6b539e102e3381318c3034af&ipo=images" alt="Product 2" class="product-image">
+        <div class="product-details">
+          <h3>Nike Low Dunk Leather</h3>
+          <p>Price: $115.00</p>
+          <p>Size: Men's 10.5</p>
+          <p>Product Description: </p>
+          <button class="ProductPage-btn" onclick="redirectToProductPage()">Product Page</button>
+          <button class="RemoveItemFromCart-btn" onclick="removeEventListener()">Remove Item From Cart </button>
+        </div>
+    </div>
+          <div class="cart-item">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bOjLnk20V80LfrvIA9sAuAHaFR%26pid%3DApi&f=1&ipt=6a6e6e8d4edb86c48d848f6ad52d569bcb9204bdebc3846e939527fe1f404236&ipo=images" alt="Product 2" class="product-image">
+            <div class="product-details">
+              <h3>Adidas Grand Court 2.0 Sneakers</h3>
+              <p>Price: $69.00</p>
+              <p>Size: women's 10.0</p>
+              <p>Product Description: </p>
+              <button class="ProductPage-btn" onclick="redirectToProductPage()">Product Page</button>
+              <button class="RemoveItemFromCart-btn" onclick="removeEventListener()">Remove Item From Cart </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <button class="checkout-btn" onclick="redirectToCheckout()">Checkout</button>
+  </footer>
+
+  <script>
+    function redirectToCheckout() {
+      // Redirect to the checkout page
+      window.location.href = "checkout.html";
+    }
+  </script>
+</body>
+</html>
