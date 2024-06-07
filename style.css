@@ -21,6 +21,7 @@ body {
     align-items: center;
     background-color: rgb(0,102,204);
     font-family: Roboto; color: white;
+
 }
 
 .brand-title {
@@ -129,6 +130,7 @@ body {
     }
 }
 
+/*made change */
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -147,6 +149,7 @@ body {
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
+        
     }
 
     .navbar-links ul li {
@@ -154,7 +157,7 @@ body {
     }
 
     .navbar-links ul li a {
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .navbar-links.active {
@@ -307,10 +310,12 @@ option {
     display: flex;    
 
 }
+/*made change here*/
+/*put it back like it was*/
 
-.column {
+.column {position: relative;
 
-    position: relative;
+
 }
   
 
@@ -355,3 +360,41 @@ input[type="submit"]:hover {
     background-color: #F5F2E9;
     color: black;
 }
+
+/*hero*/
+
+.centered {
+    text-align: center;
+}
+
+.hero-content {
+    color: #FFF;
+    align-items: center;
+}
+
+.hero-wrapper {
+    align-items: center;
+    background-color: gray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    
+}
+
+.hero-content h2 {margin-bottom: 0;
+
+}
+
+@keyframes flash {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+.hero-content {
+    animation: flash 2s infinite;
+}
+
