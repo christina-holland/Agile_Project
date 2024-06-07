@@ -3,14 +3,14 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0.5;
     font-family:'Roboto', sans-serif;
     text-align: center;
 }
 
-.paragraph {line-height: 1.75;
+.paragraph {
+    line-height: 1.75;
     font-size: large;
-
 }
 
 /*navbar top*/
@@ -24,24 +24,16 @@ body {
 }
 
 .brand-title {
-    font-size: 1.5rem;
+    font-size: 3.0rem;
     margin: 0.5em;
     font-family: Roboto; color: white;
 }
-
-/*.navbar-links {
-    height: 100%;
-}*/
 
 .navbar-links ul {
     display: flex;
     list-style: none;
     padding: 0;
 }
-/*.navbar-links li {
-    list-style: none;
-
-}*/
 
 .navbar-links li a {
     display: block;
@@ -53,70 +45,13 @@ body {
 
 .navbar-links li a:hover {
     background-color: #F5F2E9;
-    color: black;
-    
-    
-}
-
-/*this is my buttons*/
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 31px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-
+    color: black;   
 }
 
 /*logo*/
 
 .logo {position:auto;
     padding: 20px;
-
 }
 
 /* Create two columns that float next to each other */
@@ -125,25 +60,15 @@ body {
     flex-direction: column;
     text-align: left;
     padding: 5px;
-  }
-  
-  /* Clear floats after the columns */
-  .row {
-    display: flex;
-    
-    
-  }
-  
-  /* Responsive layout - makes the scolumns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
 }
   
+/* Clear floats after the columns */
+.row {
+    display: flex;  
+}
 
+  
 /*footer*/
-
 .footer-links {
     display: flex;
     padding: 10px;
@@ -155,12 +80,6 @@ body {
     height: 100%;
 }
 
-.brand-title {
-    font-size: 3.0rem;
-    margin: 0.5em;
-    font-family: Roboto; color: white;
-}
-
 .footer-links ul {
     display: flex;
     margin: 0;
@@ -168,21 +87,19 @@ body {
 }
 .footer-links li {
     list-style: none;
-
 }
+
 .footer-links li a {
     display: block;
     text-decoration: none;
     color:white;
     padding:1rem;
-    font-family: 'Roboto';
-    
+    font-family: 'Roboto';   
 }
 
 .footer-links li a:hover {
     background-color: #F5F2E9;
-    color: black;
-    
+    color: black;   
 }
 
 /*this is my buttons*/
@@ -203,6 +120,13 @@ body {
     width: 100%;
     background-color: white;
     border-radius: 10px;
+}
+
+/* Responsive layout - makes the scolumns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -236,4 +160,195 @@ body {
     .navbar-links.active {
         display: flex;
     }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.image-container {
+    border: 5px solid black; /* Add a border */
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container a {
+    color: black;
+}
+
+.image-container a:hover {
+    color: rgb(0,102,204);
+}
+
+#shoe-sizes {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+option {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(0,102,204);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: rgb(0,102,204);
+}
+
+.add-to-cart-btn:focus,
+.add-to-cart-btn:active {
+    outline: none; 
+}
+
+
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.cart-item {
+    border: 5px solid black;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.cart-item a {
+    color: black;
+}
+
+.cart-item a:hover {
+        color: rgb(0,102,204);}
+  
+.product-image {
+    width: 125px;
+    height: 100px;
+    margin-right: 10px;
+    float: left;
+}
+  
+.product-details {
+    overflow: hidden;
+}
+  
+
+.remove-from-cart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(0,102,204);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-from-cart-btn:hover {
+    background-color: rgb(0,102,204);
+}
+
+.remove-from-cart-btn:focus,
+.remove-from-cart-btn:active {
+    outline: none; 
+}
+
+.checkout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(0,102,204);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #F5F2E9;
+    color: black;
+}
+
+
+.container{
+    display: flex;    
+
+}
+
+.column {
+
+    position: relative;
+}
+  
+
+.columnTwo {
+
+    position: relative;
+    left: 30%;
+}
+ 
+
+.column h2 {
+    margin-top: 0;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(0,102,204);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #F5F2E9;
+    color: black;
 }

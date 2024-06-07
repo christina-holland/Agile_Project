@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-    <link rel="stylesheet" href="Demo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
         
-            <div class="brand-title">Shoes by Stiegler</div>
+            <div class="brand-title">Shoes by Stiegler Ed Tech</div>
         
                 <div><img src="images/companylogo.png" class="logo"></div>
             
@@ -24,14 +23,50 @@
                             <div class="navbar-links">        
                                     <ul>
                                     <li><a href="index2.html">Home</a></li>
-                                    <li><a href="Product Listings.html">Products</a></li>
-                                    <li><a href="cart.html">Shopping Cart</a></li>
+                                    <li><a href="productlistings.html">Products</a></li>
+                                    <li><a href="Cart.html">Shopping Cart</a></li>
                                     </ul>
                             </div>
         </nav>
         
     </header>
-        
+        <h1>Checkout</h1>
+    <div class="cart-items">
+      <div class="cart-item">
+        <img src="https://rothys.com/cdn/shop/files/149_TheHighTop_CourtsideWhite_Side_869_650x.jpg?v=1714026444" alt="The Stiegler High Top Sneaker" class="product-image">
+        <div class="product-details">
+          <b><h3><a href="Product3.html">The Stiegler High Top Sneaker</a></h3></b>
+          <p>Item#: 81562</p>
+          <p>Price: $80.00</p>
+          <p>Size: Women 8</p>
+          <p>Quantity: 1</p>
+        </div>
+      </div>
+      <div class="cart-item">
+        <img src="https://rothys.com/cdn/shop/products/075_SquareMaryJane_Black_A_650x.jpg?v=1650567871" alt="The Stiegler Mary Jane" class="product-image">
+        <div class="product-details">
+          <b><h3><a href="Product6.html">The Stiegler Mary Jane</a></h3></b>
+          <p>Item#: 93472</p>
+          <p>Price: $75.00</p>
+          <p>Size: Women 7</p>
+          <p>Quantity: 1</p>
+        </div>
+    </div>
+          <div class="cart-item">
+            <img src="https://rothys.com/cdn/shop/products/118_CitySlipOn_White_Side_650x.jpg?v=1710452308" alt="The Stiegler City Sneaker" class="product-image">
+            <div class="product-details">
+              <b><h3><a href="Product9.html">The Stiegler City Sneaker</a></h3></b>
+              <p>Item#: 23291</p>
+              <p>Price: $65.00</p>
+              <p>Size: Men 10</p>
+              <p>Quantity: 1</p>
+        </div>
+      </div>
+    </div>
+        <p>Subtotal: $220</p>
+        <p>Tax: $15.40
+        <p>Total: $235.40</p>
+    </p>
         <div class="container">
             <div class="column"><br><br>
                 <h2>Billing Information</h2>
@@ -51,17 +86,11 @@
 
                     <div class="columnTwo"> <br>
                         <h2>Payment Information</h2> 
-
                             <form action="#" method="post"> 
-                                <i class="fa fa-cc-amex" style="font-size:24px"></i>
-                                <i class="fa fa-cc-visa" style="font-size:24px"></i>
-                                <i class="fa fa-cc-discover" style="font-size:24px"></i>
-                                <i class="fa fa-cc-mastercard" style="font-size:24px"></i>
-                                <i class="fa fa-google-wallet" style="font-size:24px"></i>
-                                <i class="fa fa-paypal" style="font-size:24px"></i><br><br>
+                                <img src="images/Cards.png" alt="forms of payment">
                                 <label for="card">Card Number:</label>
                                 <input type="text" id="card" name="card" required>        
-                                <label for="expiration">Ex. Date/Year:</label> 
+                                <label for="expiration">Exp. Month/Year:</label> 
                                 <input type="text" id="expiration" name="expiration" required><label for="CVV">CVV:</label>
                                 <input type="text" id="cv" name="cv" required>          
                                 <input type="submit" value="Submit">         
@@ -70,7 +99,7 @@
                     </div> 
         </div>
     <footer>
-        <nav class="footer-links">Shoes by Stiegler</div>
+        <nav class="footer-links">Shoes by Stiegler Ed Tech</div>
         
             <p>1234 Shoes Blvd.
                 Wilmington, NC 28405 <sup>.</sup>
