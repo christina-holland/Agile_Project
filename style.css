@@ -261,14 +261,17 @@ option {
 }
   
 
-.remove-from-cart-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: rgb(0,102,204);
+.remove-from-cart-button {
+   background-color: crimson;
     color: #fff;
-    border: none;
-    border-radius: 4px;
+    border: navy;
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
+    display: block;
+    margin: 15px auto;
+    align-items: center;
+    float: left;
 }
 
 .remove-from-cart-btn:hover {
